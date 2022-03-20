@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+
+    </head>
+    <body>
+        <br/><br/>
+        <form th:action="@{/measurements/add}" th:object="${m}" method="POST">
+            <table border="0">
+                <tr>
+                    <td>Year</td>
+                    <td>:</td>
+                    <td><input type="text" th:field="*{year}" /></td>              
+                </tr>
+                <tr>
+                    <td>Month</td>
+                    <td>:</td>
+                    <td><input type="text" th:field="*{month}" /></td>              
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td>:</td>
+                    <td><input type="text" th:field="*{result}" /></td>              
+                </tr>
+                <tr>
+                    <td>Device</td>
+                    <td>:</td>
+                    <td><input type="text" th:field="*{device.id}" size="50" /></td>              
+                </tr>
+            </table>
+            <input type="submit" />
+        </form>
+ 
+        <br/>     
+    </body>
+</html>

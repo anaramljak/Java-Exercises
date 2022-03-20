@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>List</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    </head>
+    <body>
+        <br/><br/>
+        <div>
+            <table border="1">
+                <tr>
+                    <th>Year</th>
+                    <th>Month</th>
+                    <th>Result</th>
+                </tr>
+                <tr th:each ="list : ${list}">
+                    <td th:utext="${list.year}">...</td>
+                    <td th:utext="${list.month}">...</td>
+                    <td th:utext="${list.result}">...</td>
+                </tr>
+            </table>          
+        </div>
+        <br/><br/>
+    </body>
+</html>

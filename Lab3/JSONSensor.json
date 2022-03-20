@@ -1,0 +1,43 @@
+{
+  "topic": "sensor",
+  "broker": "tcp://localhost:1883",
+  "clientId": "Sample",
+  "sensors": [
+    {
+      "name": "Water temperature",
+      "dataType": "int16",
+      "factor": 10,
+      "min": -3266.8,
+      "max": 3266.8,
+      "value": 0,
+      "unit": "°C"
+    },
+    {
+      "name": "Water pressure",
+      "dataType": "uint16",
+      "factor": 1000,
+      "min": 0,
+      "max": 65.336,
+      "value": 0,
+      "unit": "Bar"
+    },
+    {
+      "name": "Consumption 1min 10min 1h 1d",
+      "dataType": "uint16",
+      "factor": 0,
+      "min": 0,
+      "max": 65336,
+      "value": 0,
+      "unit": "liter"
+    },
+    {
+      "name": "Consumption 1w 1m 1y",
+      "dataType": "uint16",
+      "factor": 10,
+      "min": 0,
+      "max": 6533.6,
+      "value": 0,
+      "unit": "m3"
+    }
+  ]
+}
